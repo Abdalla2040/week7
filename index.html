@@ -16,7 +16,7 @@
         <div v-html="profilePhoto" class="profilePhoto"></div>
         <div>
           <form id="form1">
-            <fieldset>
+            <fieldset v-bind:class="{validForm: newStudent.valid, invalidForm: newStudent.invalid}">
               <legend>ADD STUDENT</legend>
               <label
                 >First Name:
@@ -68,7 +68,7 @@
                   v-model="newStudent.gpa"
                   placeholder="Enter student's current GPA"
               /></label>
-              <fieldset class="registrations">
+              <fieldset v-bind:class="{validForm: registration.valid, invalidForm: registration.invalid}" class="registrations">
                 <legend>Course Registration</legend>
                 <label
                   >Course Number: <br />
@@ -84,33 +84,36 @@
                     type="number"
                     v-model.number="registration.numOfCredits"
                 /></label>
-                <label
-                  >Attendance Type: <br />
-                  <label class="att" style="display: inline">
+                <br><label
+                  >Attendance Type:</label> <br />
+                <div class="att">
+                
+                  <!-- <label  style="display: inline">
                     <input
                       style="display: inline"
                       type="radio"
                       value="Face-To-Face"
                       v-model="registration.attendanceType"
                     />
-                    Face-To-Face</label
-                  >
-                  <label>
+                    Face-To-Face
+                  
                     <input
                       type="radio"
                       value="Synchronous Online"
                       v-model="registration.attendanceType"
                     />
-                    Synchronous Online</label
-                  >
-                  <label>
+                    Synchronous Online
+                  
                     <input
                       type="radio"
                       value="Asynchronous Online"
                       v-model="registration.attendanceType"
-                    />Asynchronous Online</label
-                  >
-                </label>
+                    />Asynchronous Online
+                    </label
+                  > -->
+                  <input  type="radio">Text: 
+                </div>
+                <br>
                 <label
                   >Book Format: <br />
                   <input

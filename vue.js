@@ -22,12 +22,16 @@ var app = new Vue({
       graduationYear: null,
       gpa: null,
       registrations: [],
+      valid: true,
+      invalid: false
     },
     registration: {
       courseNumber: null,
       attendanceType: null,
       numOfCredits: null,
       bookFormat: [],
+      valid: true,
+      invalid: false
     },
     student: [
       {
@@ -119,6 +123,27 @@ var app = new Vue({
       handler() {
         this.setUpdated();
       },
+    },
+    newStudent:{
+      handler: function(){
+        if(this.newStudent.firstName == '' || this.newStudent.lastName == ''){
+          this.newStudent.valid = false;
+          this.newStudent.invalid = true;
+        }
+      }, 
+      deep: true,
+      
+      
+    },
+    registration:{
+      handler: function(){
+        if(this.registration.courseNumber = '' && this.registration.numOfCredits == ''){
+          this.registration.invalid = true;
+          this.registration.valid = false;
+        }
+      },
+      deep: true,
+      
     },
   },
   template: "#Divtemplate",
