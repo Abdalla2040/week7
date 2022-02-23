@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin-left: 0.5rem;
+  padding: 0;
+  background-color: #93a5cf;
+  width: 90%;
+}
+body {
+  margin-top: 2rem;
+}
+.container h1 {
+  margin-bottom: 2rem;
+  font-size: 3em;
+  text-decoration: underline;
+}
+.container h2 {
+  text-decoration: underline;
+}
+.red {
+  color: red;
+}
+.orange {
+  color: orange;
+}
+.yellow {
+  color: yellow;
+}
+.green {
+  color: green;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.profilePhoto {
+  width: 30%;
+  height: 25%;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+#setTechID {
+  width: auto;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  border-radius: 0.5rem;
+  border: none;
+}
+.major span {
+  margin-left: 2rem;
+  padding-top: 1rem;
+  display: block;
+}
+.input,
+.hideInput {
+  display: block;
+  padding: 0.25rem;
+  width: 25%;
+}
+.input {
+  margin-bottom: 0.5rem;
+  background-color: rgb(188, 234, 235);
+}
+.hideInput {
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  border-radius: 0.5rem;
+  border: none;
+}
+#form1 {
+  position: absolute;
+  top: 10rem;
+  right: 15rem;
+  width: 50%;
+  font-weight: 600;
+  background-color: #3a748f;
+}
+#form1 input {
+  display: block;
+  padding: 0.3rem 1rem;
+  margin: 0.5rem;
+  border-radius: 2rem;
+}
+.studentInfo {
+  margin-top: 5rem;
+  width: 70%;
+}
+#form1 label {
+  display: block;
+  width: auto;
+  margin-left: auto;
+  background-color: powderblue;
+}
+#form1 label:nth-of-type(4) {
+  margin-left: 3rem;
+  font-weight: 100;
+  width: 80%;
+}
+#form1 fieldset {
+  margin: 1rem;
+  padding: 3rem;
+  background-color: powderblue;
+}
+.newStdBtn {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem lightblue;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  border-radius: 0.5rem;
+  border: none;
+}
+legend {
+  background-color: powderblue;
+}
+#form1 input::placeholder {
+  color: rgb(79, 77, 77);
+}
+.registrations {
+  border: 1rem solid black;
+}
+.registrations input,
+label {
+  display: inline;
+}
+/* .att input {
+  display: inline;
+  margin-left: 1rem;
+  border: 1rem solid rgb(140, 62, 62);
+} */
+/* input[type="radio"] {
+  display: inline;
+} */
+/* .att {
+  display: inline;
+  margin-right: 10rem;
+} */
